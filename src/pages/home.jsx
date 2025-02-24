@@ -11,22 +11,22 @@ import Instagram from '../Components/Instagram/Instagram'
 import Category from '../Components/Category/Category'
 import Footer from '../Components/Footer/Footer'
 
-function Home() {
+function HomePages() {
   return (
-    <div className="container max-w-screen-xl mx-auto">
-      <Header/>
-        <Hero/>
-        <Brand/>
-        <Cars/>
-        <Services/>
-        <Rent/>
-        <Dubai/>
-        <Question/>
-        <Instagram/>
-        <Category/>
-        <Footer/>
+    <div>
+      <Header />
+      <Hero />
+      <Brand />
+      <Cars />
+      <Services />
+      <Rent />
+      <Dubai />
+      <Question />
+      <Instagram />
+      <Category />
+      <Footer />
     </div>
   )
 }
 
-export default Home
+export default HomePages
