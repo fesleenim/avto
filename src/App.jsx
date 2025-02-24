@@ -10,17 +10,15 @@ import Blog from './Components/Blog/Blog'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePages />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/cars" element={<Cars />} />
-        <Route path="/brands" element={<Brand />} />
-        <Route path="/about" element={<About />}/>     
-        <Route path="/contact" element={<Contact/>}/>    
-        <Route path="/blog" element={<Blog/>}/>  
-         </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePages />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/cars" element={<Cars />} />
+      <Route path="/brands" element={<Brand />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/blog" element={<Blog />} />
+    </Routes>
   )
 }
 

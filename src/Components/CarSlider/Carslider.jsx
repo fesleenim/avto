@@ -40,7 +40,7 @@ export default function CarSlider() {
               src={car}
               alt={`Car ${index + 1}`}
               className={`transition-all duration-500 ease-in-out transform ${
-                index === activeIndex ? "scale-100" : "scale-65 opacity-80"
+                index === activeIndex ? "scale-100" : "scale-75 opacity-80"
               }`}
             />
           </SwiperSlide>
