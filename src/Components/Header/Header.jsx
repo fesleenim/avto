@@ -20,7 +20,7 @@ function Header() {
       <div className="headerbgtop">
         <div className="max-w-[1240px] h-[100px] mx-auto px-5 flex items-center justify-between relative">
           {/* Logo */}
-          <div className="w-[120px] max-[400px]:w-[90px] ">
+          <div className="w-[120px] max-[400px]:w-[90px]">
             <img src={Logo} alt="Logo" className="w-full h-full" />
           </div>
           {/* Search */}
