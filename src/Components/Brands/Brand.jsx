@@ -17,7 +17,6 @@ function Brand() {
     axios
       .get(url)
       .then((res) => {
-        console.log(res.data.data);
         setCategories(res.data.data);
       })
       .catch((err) => console.error("Error:", err));
