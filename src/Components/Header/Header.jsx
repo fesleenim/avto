@@ -6,6 +6,7 @@ import Logo from "../../assets/logo.png";
 import { RiSearch2Line } from "react-icons/ri";
 import { TfiMenu } from "react-icons/tfi";
 import { CgCloseO } from "react-icons/cg";
+import "./Header.css"
 
 function Header() {
   const [selectedLang, setSelectedLang] = useState("en");
@@ -16,7 +17,7 @@ function Header() {
   };
 
   return (
-    <header className="headerbg">
+    <header className="header bg-[#2D336B]">
       <div className="headerbgtop">
         <div className="max-w-[1240px] h-[100px] mx-auto px-5 flex items-center justify-between relative">
           {/* Logo */}

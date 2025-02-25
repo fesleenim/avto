@@ -1,0 +1,98 @@
+
+* {
+    font-family: "Rubik";
+    transition: all 0.3s ease;
+  }
+  body{
+    background-color: #213555;
+  }
+  
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  
+  /* headerbg */
+  .formbg{
+    background:linear-gradient(90deg,#353535e9,#24242581,#13131560,#00000031);
+  }
+  @media screen and (max-width: 500px){
+    .formbg{
+      background: none;
+    }
+    
+  }
+  
+  .headerbg::before , .headerbg::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    background: linear-gradient(90deg,#600202,#630202,#105304,#043f17,#105304,#630202,#7f0202);
+    background-size: 200%;
+    width: calc(100%);
+    height: calc(102px);
+    z-index: -2;
+    animation: animate 20s linear infinite;
+  
+  }
+  @keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+  }
+  .headerbg::after{
+    filter: blur(10px);
+  } 
+  .headerbgtop::before , .headerbgtop::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    background: linear-gradient(90deg,#000000,#150202,#200202,#370404,#200202,#150202,#000000);
+    background-size: 200%;
+    width: calc(100%);
+    height: calc(101px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+  
+  }
+  @keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+  }
+  .headerbgtop::after{
+    filter: blur(0px);
+  }
+  
+  .active{
+    color: red;
+  }
+  
+  .sviperslide{
+    background:linear-gradient(135deg,#14147526,#4a4ad957,#0b1ec93b);
+    transition: all 0.5s ease;
+  
+  }
+  
+  .sviperslide:hover{
+    transition: all 0.5s ease;
+    background:linear-gradient(135deg,#4a4ad957,#14147526,#4a4ad957);
+  }
+  

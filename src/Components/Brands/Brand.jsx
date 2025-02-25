@@ -23,7 +23,7 @@ function Brand() {
   }, []);
 
   return (
-  <div className="">
+  <div className="bg-[#2D336B]">
     <div className="max-w-[1240px] mx-auto px-5 py-8">
       <h2 className="text-5xl text-white font-medium pb-5">Brand</h2>
     <Swiper

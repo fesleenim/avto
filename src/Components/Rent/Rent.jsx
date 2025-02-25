@@ -23,7 +23,7 @@ function Rent() {
         transition={{ duration: 3, ease: 'easeOut' }}
       />
 
-      <div className="absolute top-25 md:top-36 w-full text-center text-[#F5EFE7] px-4">
+      <div className="absolute top-30 md:top-46 w-full text-center text-[#F5EFE7] px-4">
         <h1 className="text-3xl md:text-xl lg:text-5xl font-bold  mb-2">
           SUPERCAR RENTAL IN DUBAI
         </h1>

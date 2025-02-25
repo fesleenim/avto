@@ -6,7 +6,7 @@ import { HiMiniArrowLongRight } from "react-icons/hi2";
 function Hero() {
   return (
     <>
-      <div className="">
+      <div className="bg-[#213555]">
         <div className="container h-[100vh] flex flex-col px-4 justify-around">
           <div className="">
             <h1 className=" pb-8 text-center text-4xl font-medium text-white max-[500px]:text-3xl">

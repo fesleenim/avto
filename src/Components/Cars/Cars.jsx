@@ -12,10 +12,10 @@ function Cars() {
   }, []);
 
   return (
-    <div className="max-w-[1260px] mx-auto px-4 mt-[100px]">
+    <div className="max-w-screen mx-auto px-4  bg-[#213555] mb-10">
       {getCars[0] && (
-        <div className="block w-full mb-10">
-          <h1 className="text-4xl font-bold text-white text-left mb-4">
+        <div className="block w-full  ">
+          <h1 className="text-4xl font-bold text-white text-left  py-10">
             {getCars[0].category?.name_en || "Kategoriya mavjud emas"}
           </h1>
           <div className="flex justify-start">
@@ -24,8 +24,8 @@ function Cars() {
         </div>
       )}
       {getCars.slice(1, 3).length > 0 && (
-        <div className="block w-full mb-10">
-          <h1 className="text-4xl font-bold text-white text-left mb-4">
+        <div className="block w-full">
+          <h1 className="text-4xl font-bold text-white text-left py-10">
             {getCars[1]?.category?.name_en || "Kategoriya mavjud emas"}
           </h1>
           <div className="flex justify-start gap-6">
@@ -36,8 +36,8 @@ function Cars() {
         </div>
       )}
       {getCars[3] && (
-        <div className="block w-full mb-10">
-          <h1 className="text-4xl font-bold text-white text-left mb-4">
+        <div className="block w-full">
+          <h1 className="text-4xl font-bold text-white text-left py-10">
             {getCars[3].category?.name_en || "Kategoriya mavjud emas"}
           </h1>
           <div className="flex justify-start">
@@ -46,8 +46,8 @@ function Cars() {
         </div>
       )}
       {getCars.slice(4, 6).length > 0 && (
-        <div className="block w-full mb-10">
-          <h1 className="text-4xl font-bold text-white text-left mb-4">
+        <div className="block w-full">
+          <h1 className="text-4xl font-bold text-white text-left py-10">
             {getCars[4]?.category?.name_en || "Kategoriya mavjud emas"}
           </h1>
           <div className="flex justify-start gap-6">
@@ -63,11 +63,12 @@ function Cars() {
 }
 function Card({ car }) {
   return (
-    <div className="bg-[#3E5879] p-6 rounded-2xl shadow-lg w-full max-w-[300px]">
+    <div className="bg-[#3E5879] px-6 rounded-2xl shadow-lg w-full max-w-[300px]">
       <img
-        src={car.image}
+        src={`https://realauto.limsa.uz/api/uploads/images/${car.car_images[0]?.image?.src}`}
+
         alt={car.title}
-        className="w-full h-40 object-cover rounded-xl mb-4"
+        className="w-full h-40 object-cover rounded-xl my-4"
       />
       <h2 className="text-xl font-semibold text-[#D8C4B6]">
         {car.category?.name_en || "Kategoriya mavjud emas"}
